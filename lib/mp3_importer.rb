@@ -24,10 +24,10 @@ class MP3Importer
     binding.pry
     @files.each { |filename| Song.new_by_filename(filename) }
     binding.pry
-  end
+  end 
 
 end
 
-newimport = MP3Importer.new("./spec/fixtures/mp3s")
+#newimport = MP3Importer.new("./spec/fixtures/mp3s")
 
-binding.pry
+#binding.pry
