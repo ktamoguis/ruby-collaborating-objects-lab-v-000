@@ -24,14 +24,16 @@ class Artist
     @@all
   end
 
+  def find_by_name(artistname)
+    self.all.detect { |artists| artists.name == artistname }
+  end
 
+  def create_by_name(artistname)
+    Artist.new(artistname)
+  end
 
   def find_or_create_by_name(artistname)
-    #create
-    newartist = Artist.new(artistname)
-    if @@all.include?(newartist)
-    end
-
+    find_by_name(artistname) || create_by_name(artistname)
   end
 
 
