@@ -14,7 +14,7 @@ class MP3Importer
 
   def files
     #Dir.chdir(@filepath)
-    @files = Dir.glob("#{@filepath}/*.mp3").collect { |file| file.gsub("#{@filepath}/mp3s/","")}
+    @files = Dir.glob("#{@filepath}/*.mp3").collect { |file| file.gsub("#{@filepath}","")}
 
     binding.pry
     @files
