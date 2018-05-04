@@ -8,7 +8,7 @@ class Song
   def artist_name=(name)
     if (self.artist.nil?)
       self.artist = Artist.new(name)
-      Artist.all << self.artist
+      #Artist.all << self.artist
     else
       self.artist.name = name
     end
