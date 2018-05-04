@@ -1,4 +1,4 @@
-#require 'pry'
+require 'pry'
 
 class MP3Importer
 
@@ -25,6 +25,6 @@ class MP3Importer
 
 end
 
-#newimport = MP3Importer.new("./spec/fixtures/mp3s")
+newimport = MP3Importer.new("./spec/fixtures/mp3s")
 
-#binding.pry
+binding.pry
