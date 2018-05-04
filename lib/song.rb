@@ -6,7 +6,7 @@ class Song
   end
 
   def artist_name=(name)
-    if (self.artist.nil?) && !newarray.include?(name)
+    if (self.artist.nil?)
       binding.pry
       self.artist = Artist.new(name)
       Artist.all << self.artist
