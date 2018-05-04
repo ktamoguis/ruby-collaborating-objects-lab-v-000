@@ -18,6 +18,7 @@ class Song
     if Artist.find_by_name(name)
       self.artist.name = name
     else
+      binding.pry
       self.artist = Artist.new(name)
       Artist.all << self.artist
     end
