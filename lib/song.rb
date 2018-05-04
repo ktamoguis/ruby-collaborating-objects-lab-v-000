@@ -21,6 +21,7 @@ class Song
       binding.pry
       self.artist = Artist.new(name)
       Artist.all << self.artist
+      binding.pry
     end
   end
 
