@@ -26,6 +26,6 @@ end
 
 
 
-newimport = MP3Importer.new(spec/fixtures/mp3s)
+newimport = MP3Importer.new("./spec/fixtures/mp3s")
 
 binding.pry
