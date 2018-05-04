@@ -1,4 +1,4 @@
-require 'pry'
+#require 'pry'
 
 class MP3Importer
 
@@ -15,7 +15,7 @@ class MP3Importer
   def files
     #Dir.chdir(@filepath)
     @files = Dir.glob("#{@filepath}/*.mp3").collect { |file| file.gsub("#{@filepath}/","")}
-    binding.pry
+    #binding.pry
     @files
   end
 
