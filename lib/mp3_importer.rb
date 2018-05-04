@@ -23,6 +23,7 @@ class MP3Importer
     files
     binding.pry
     @files.each { |filename| Song.new_by_filename(filename) }
+    @files.each { |filename| Artist.find_or_create_by_name(filename)}
     binding.pry
   end
 
