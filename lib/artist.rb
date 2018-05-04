@@ -32,7 +32,7 @@ class Artist
     Artist.new(artistname)
   end
 
-  def find_or_create_by_name(artistname)
+  def self.find_or_create_by_name(artistname)
     find_by_name(artistname) || create_by_name(artistname)
   end
 
