@@ -6,12 +6,10 @@ class Song
   end
 
   def artist_name=(name)
-    @newarray = []
     if (self.artist.nil?) && !newarray.include?(name)
       binding.pry
       self.artist = Artist.new(name)
       Artist.all << self.artist
-      @newarray << name
     else
       self.artist.name = name
     end
