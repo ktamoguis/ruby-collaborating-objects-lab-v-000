@@ -1,4 +1,4 @@
-#require 'pry'
+require 'pry'
 
 class MP3Importer
 
@@ -14,7 +14,8 @@ class MP3Importer
 
   def files
     #Dir.chdir(@filepath)
-    @files = Dir.glob("#{@filepath}*.mp3")
+    @files = Dir.glob("#{@filepath}/*.mp3")
+    binding.pry
     @files
   end
 
