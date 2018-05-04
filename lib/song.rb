@@ -6,9 +6,9 @@ class Song
   end
 
   def artist_name=(name)
-    if (self.artist.nil?) && Artist.all.include?(name)
+    if (self.artist.nil?) && !Artist.all.include?(name)
       self.artist = Artist.new(name)
-      #Artist.all << self.artist
+      Artist.all << self.artist
     else
       self.artist.name = name
     end
