@@ -36,6 +36,10 @@ class Artist
     self.find_by_name(artistname) || self.create_by_name(artistname)
   end
 
+  def print_songs
+
+  end
+
 
 
 end
