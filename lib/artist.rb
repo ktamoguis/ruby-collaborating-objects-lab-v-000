@@ -40,6 +40,4 @@ class Artist
     @songs.each { |songs| puts songs.name }
   end
 
-
-
 end
