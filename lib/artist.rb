@@ -29,7 +29,8 @@ class Artist
   end
 
   def self.create_by_name(artistname)
-    Artist.new(artistname)
+    newartist = Artist.new(artistname)
+    newartist.save
   end
 
   def self.find_or_create_by_name(artistname)
