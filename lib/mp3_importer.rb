@@ -14,7 +14,7 @@ class MP3Importer
 
   def files
     #Dir.chdir(@filepath)
-    @files = Dir.glob("*.mp3")
+    @files = Dir.glob("#{@filepath}*.mp3")
     @files
   end
 
