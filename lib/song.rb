@@ -8,14 +8,14 @@ class Song
   end
 
   def artist_name=(name)
-    #if (self.artist.nil?)
+    if (self.artist.nil?)
     #  binding.pry
     #if Artist.find_by_name(name)
-    #  self.artist = Artist.new(name)
-    #  Artist.all << self.artist
-    #else
-    #  self.artist.name = name
-    #end
+      self.artist = Artist.new(name)
+      Artist.all << self.artist
+    else
+      self.artist.name = name
+    end
 
     #if Artist.find_by_name(name)
     #  self.artist.name = name
@@ -25,7 +25,7 @@ class Song
     #  Artist.all << self.artist
     #  binding.pry
 
-    Artist.find_or_create_by_name(name)
+    #Artist.find_or_create_by_name(name)
 
 
   end
