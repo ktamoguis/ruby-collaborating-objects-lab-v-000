@@ -18,6 +18,7 @@ class Song
     # end
 
     self.artist = Artist.find_or_create_by_name(name)
+    artist.add_song(self)
 
     #if Artist.find_by_name(name)
     #  self.artist.name = name
