@@ -24,6 +24,9 @@ class Song
     #  self.artist = Artist.new(name)
     #  Artist.all << self.artist
     #  binding.pry
+
+    Artist.find_or_create_by_name(name)
+
     
   end
 
